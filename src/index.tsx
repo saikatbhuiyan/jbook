@@ -13,7 +13,6 @@ const App = () => {
       wasmURL: "/esbuild.wasm",
     });
   };
-
   useEffect(() => {
     startService();
   }, []);
@@ -27,7 +26,7 @@ const App = () => {
       loader: "jsx",
       target: "es2015",
     });
-
+    // console.log(result);
     setCode(result.code);
   };
 
